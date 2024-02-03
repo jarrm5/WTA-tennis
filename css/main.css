@@ -79,10 +79,6 @@ header{
     border-bottom: 3px solid var(--wta-purple);
 }
 
-.list-item-main, .list-item-main-dropdown{
-    border-bottom: 3px solid transparent;
-}
-
 .list-item-main > a,  .list-item-main-dropdown > a{
     text-decoration: none;
     color: var(--black);
@@ -114,7 +110,7 @@ header{
     width:100%;
     position: absolute;
     top: 50%;
-    transition: transform 1s ease;
+    transition: transform 1s ease-in-out;
     opacity: 0;
     pointer-events: none;
 }
@@ -127,9 +123,9 @@ header{
     text-decoration: none;
     color: var(--white);
     font-size: .60rem;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
-.list-item-dropdown > a:hover, .list-item-dropdown > a:focus{
-    border-bottom: 3px solid var(--white);
+.list-item-dropdown:hover a, .list-item-dropdown:focus a {
+    border-bottom: 2px solid var(--white);
 }
