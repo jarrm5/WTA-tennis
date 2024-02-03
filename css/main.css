@@ -44,7 +44,6 @@ body{
 
 header{
     display:flex;
-    margin: 0.5em 0;
     background-color: var(--white);
     position:sticky;
     top:0;
@@ -64,9 +63,6 @@ header{
     display: flex;
     flex-flow: row nowrap;
     gap: 1rem;
-    /* align-items: center; */
-    /* justify-content:space-around; */
-    
 }
 
 .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
@@ -81,6 +77,10 @@ header{
 .list-item-main:hover, .list-item-main:focus {
     cursor: pointer;
     border-bottom: 3px solid var(--wta-purple);
+}
+
+.list-item-main, .list-item-main-dropdown{
+    border-bottom: 3px solid transparent;
 }
 
 .list-item-main > a,  .list-item-main-dropdown > a{
@@ -103,6 +103,7 @@ header{
 .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
     opacity: 1;
     pointer-events: auto;
+    transform: translateY(10%);
 }
 
 .dropdown-list{
@@ -112,7 +113,8 @@ header{
     flex-flow: column nowrap;
     width:100%;
     position: absolute;
-    top: 70%;
+    top: 50%;
+    transition: transform 1s ease;
     opacity: 0;
     pointer-events: none;
 }
@@ -125,9 +127,9 @@ header{
     text-decoration: none;
     color: var(--white);
     font-size: .60rem;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 
 .list-item-dropdown > a:hover, .list-item-dropdown > a:focus{
-    border-bottom: 2px solid var(--white);
+    border-bottom: 3px solid var(--white);
 }
