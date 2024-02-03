@@ -1,0 +1,99 @@
+.banner{
+    background-color: var(--wta-purple);
+    color: var(--white);
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    text-align:center;
+}
+
+.players-container{
+    padding: 0.5em;
+    display:flex;
+    gap: 0.5em;
+    flex-flow: row wrap;
+}
+
+.player-card{
+    flex: 0 1 200px;
+    text-decoration: none;
+}
+
+.player-card:visited .player-spec-container .player-name .player-last-name{
+    color: var(--black);
+}
+
+/* The parent of this psuedo element is the .player-img-container i guess?*/
+.player-img-container::before{
+    content:"";
+    background-color: var(--wta-purple);
+    height:65%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+
+.player-img-container{
+    /*% of the parents width */
+    padding-top: 39%; 
+    position:relative;
+    overflow:hidden;
+}
+
+.player-img-container img{
+    position:absolute;
+    bottom:-130%;
+    width:100%;
+}
+
+
+.player-spec-container{
+    background-color: var(--light-grey);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    position:relative;
+}
+
+.player-name {
+	/* padding: 0.5em 0; */
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+.player-card:hover,
+.player-card:focus {
+    cursor:pointer;
+}
+
+.player-card:hover .player-spec-container .player-name .player-first-name,
+.player-card:hover .player-spec-container .player-name .player-last-name ,
+.player-card:focus .player-spec-container .player-name .player-first-name,
+.player-card:focus .player-spec-container .player-name .player-last-name {
+    border-bottom: 2px solid var(--wta-purple);
+    color: var(--wta-purple);
+}
+        
+
+.player-first-name{
+    font-size: 0.6rem;
+    color: var(--grey);
+    border-bottom: 2px solid transparent;
+}
+
+.player-last-name{
+    border-bottom: 2px solid transparent;
+}
+
+.player-country {
+	/* padding: 0.5em 0; */
+	display: flex;
+	gap: 0.5em;
+	margin-top: 0.5em;
+}
+
+.player-country-abbr{
+    display:flex;
+    align-items:center;
+    color: var(--grey);
+    font-size: .6rem;
+}

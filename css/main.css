@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap');
+
+:root {
+    --black: #000;
+    --wta-purple: #7814ff;
+    --grey: #818181;
+    --light-grey: #e6e6e6;
+    --lightest-grey: #f2f2f2;
+    --white: #fff;
+
+    /* --lemon: #FBF8CC;
+    --champagne-pink: #FDE4CF;
+    --tea-rose-pink: #FFCFD2;
+    --lavendar-pink: #F1C0E8;
+    --mauve-purple: #CFBAF0;
+    --jordy-blue: #A3C4F3;
+    --non-photo-blue: #90DBF4;
+    --electric-blue: #8EECF5;
+    --aquamarine: #98F5E1;
+    --celadon: #B9FBC0; */
+
+    --profile-value-largest: 2rem;
+    --profile-value-large: 1.5rem;
+    --profile-value-small: 0.75rem;
+    --ranking: 3rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+}
+
+header{
+    display:flex;
+    margin: 0.5em 0;
+    background-color: var(--white);
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+.main-nav{
+    /* background-color: var(--lemon); */
+    /* main-nav will fill the rest of the horizontal splace of header element */
+    flex-grow:1;
+    padding: 0 1em;
+}
+
+.main-nav > ul{
+    height:100%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    /* align-items: center; */
+    /* justify-content:space-around; */
+    
+}
+
+.list-item-main, .list-item-main-dropdown, .list-item-dropdown{
+    font-weight: bolder;
+    height: 100%;
+    padding: 1em;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:center;
+}
+
+.list-item-main:hover, .list-item-main:focus {
+    cursor: pointer;
+    border-bottom: 3px solid var(--wta-purple);
+}
+
+.list-item-main > a,  .list-item-main-dropdown > a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.list-item-main-dropdown{
+    position:relative;
+}
+
+.list-item-main-dropdown{
+    cursor: pointer;
+}
+
+.list-item-main-dropdown::after{
+    content: "";
+}
+
+.list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-list{
+    background-color: var(--black);
+    color: var(--white);
+    display:flex;
+    flex-flow: column nowrap;
+    width:100%;
+    position: absolute;
+    top: 70%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.list-item-dropdown{
+    padding: 0.6em;
+}
+
+.list-item-dropdown > a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: .60rem;
+    border-bottom: 2px solid transparent;
+}
+
+.list-item-dropdown > a:hover, .list-item-dropdown > a:focus{
+    border-bottom: 2px solid var(--white);
+}
