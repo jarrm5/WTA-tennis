@@ -90,7 +90,7 @@ header{
 .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(10%);
+    transform: translateY(1.2rem);
 }
 
 .list-item-main-dropdown:hover::after, .list-item-main-dropdown:focus::after{
@@ -103,7 +103,7 @@ header{
     display:flex;
     flex-flow: column nowrap;
     position: absolute;
-    top: 65%;
+    top: 2rem;
     transition: transform 1s ease-in-out;
     opacity: 0;
     pointer-events: none;
@@ -112,7 +112,6 @@ header{
 
 .list-item-dropdown{
     padding: 0.6em;
-    
 }
 
 .list-item-dropdown > a{
