@@ -28,6 +28,7 @@ html {
 
 body{
     background-color: var(--white);
+    
 }
 
 header{
@@ -40,8 +41,7 @@ header{
 
 .main-nav{
     /* main-nav will fill the rest of the horizontal splace of header element */
-    flex-grow:1;
-    padding: 0 1em;
+    flex:1 1 90%;
 }
 
 .main-nav > ul{
@@ -54,6 +54,7 @@ header{
 
 .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
     font-weight: bolder;
+    font-size: 0.75rem;
     height: 100%;
     padding: 1em;
     display:flex;
@@ -101,16 +102,17 @@ header{
     color: var(--white);
     display:flex;
     flex-flow: column nowrap;
-    width:100%;
     position: absolute;
     top: 65%;
     transition: transform 1s ease-in-out;
     opacity: 0;
     pointer-events: none;
+    width:max-content;
 }
 
 .list-item-dropdown{
     padding: 0.6em;
+    
 }
 
 .list-item-dropdown > a{
