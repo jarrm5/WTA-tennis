@@ -3,6 +3,8 @@ bugs
 1. (done) main nav border bottom issue - part of top purple banner disappears when I hover over it
 2. (done) submenu - hovering over any part of the list item should underline it
 3. (done) Dropdown should be center aligned to its list-item-main-dropdown item
+4. main nav overflows the header
+5. WTA dropdown menu is too narrow, content should fit on one line
 
 todo
 
