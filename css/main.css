@@ -112,7 +112,7 @@ header{
 
 .dropdown-list::before{
     content: "";
-    width: 0;
+    width: min-content;
     border-style: solid;
     /* border-top,border-left and right, border-bottom */
     border-width: 0.35em 0.35em;
@@ -120,8 +120,14 @@ header{
     border-color: transparent transparent var(--black);
     /* positioned relative to .dropdown */
     position:absolute;
+    /* percentage of the containing block's height */
+    /* top:-5.5%; */
+    /* use rems unit to keep same top positioning on both dropdowns  */
     top:-0.5rem;
-    right:45%;
+    /*combination of these 3 props centers the arrow relative to the dropdown */
+    right:0;
+    left:0;
+    margin:0 auto;
 }
 
 .list-item-dropdown{
