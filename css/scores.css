@@ -6,3 +6,34 @@
     text-align:center;
 }
 
+.match-heading{
+    background-color: var(--light-grey);
+    padding:0.5em;
+    font-size: var(--small-fontSize);
+    display:flex;
+    justify-content: space-between;
+}
+
+.match-status-time-container{
+    display:flex;
+    gap:0.5em;
+}
+
+.match-status{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.match-scores-grid-container{
+    display: grid;
+    grid-template-columns: 10fr repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+
+.match-player-container:nth-child(1){
+    border-left: 3px solid var(--wta-purple);
+}
+
+.match-player-container:nth-child(5){
+    border-left: 3px solid var(--black);
+}

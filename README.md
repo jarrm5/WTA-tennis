@@ -6,6 +6,8 @@ bugs
 4. main nav overflows the header; body has overflow (media query?)
 5. (done) WTA dropdown menu is too narrow, content should fit on one line
 6. (done) WTA vertical dropdown is not aligned with the other dropdowm (change top to rem units?)
+7. clicking anywhere on the link on main nav li should take me to the page, only works for clicking the actual anchor tag
+8. Fix the font across the site to be less bold in some places
 
 todo
 
