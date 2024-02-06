@@ -32,19 +32,19 @@
 }
 
 .profile-value-largest {
-    font-size: var(--profile-value-largest);
+    font-size: var(--large-fontSize);
 }
 
 .profile-value-large {
-    font-size: var(--profile-value-large);
+    font-size: var(--med-fontSize);
 }
 
 .profile-value-small {
-    font-size: var(--profile-value-small);
+    font-size: var(--small-fontSize);
 }
 
 .ranking {
-    font-size: var(--ranking);
+    font-size: var(--ranking-fontSize);
 }
 
 .profile-ranking{

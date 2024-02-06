@@ -11,4 +11,5 @@ todo
 
 1. (done) add dropdown animation
 2. (done) add arrows to main nav, dropdown menu box
-3. add scores across the top that slide across the viewport
+3. add scores page
+4. add purple underline when you are on scores page (or any active page) - might need javascript
