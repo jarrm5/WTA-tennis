@@ -6,6 +6,23 @@
     text-align:center;
 }
 
+/* .match-container{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+} */
+
+/* .match-box{
+    flex: 0 0 45%;
+} */
+
+.match-container{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(30%,45%));
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
 .match-heading{
     background-color: var(--light-grey);
     padding:0.35rem;
@@ -39,7 +56,7 @@
 .match-scores-grid-container{
     display: grid;
     grid-template-columns: 10fr repeat(3,1fr);
-    grid-template-rows: repeat(2,auto);
+    /* grid-template-rows: repeat(2,auto); */
 }
 
 .match-player-container{
