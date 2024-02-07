@@ -15,3 +15,4 @@ todo
 2. (done) add arrows to main nav, dropdown menu box
 3. add scores page
 4. add purple underline when you are on scores page (or any active page) - might need javascript
+5. Add ranking, checkmark next to winner in the match box
