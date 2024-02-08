@@ -71,6 +71,12 @@ header{
     cursor:pointer;
     position:relative;
 }
+.list-item-main a{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
     border-bottom: 3px solid var(--wta-purple);
