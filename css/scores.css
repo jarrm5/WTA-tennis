@@ -10,6 +10,43 @@
     padding:0.5em;
 }
 
+/** Tournament Aside CSS **/
+
+.surface-container{
+    position:relative;
+}
+
+.surface-container img{
+    width: 100%;
+}
+
+.surface-label{
+    width: 100%;
+    font-size: var(--small-fontSize);
+    display:flex;
+    justify-content:space-between;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.surface-date{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.25em;
+    font-weight: bold;
+}
+
+.surface-type {
+    padding: 0.25em;
+    text-transform: uppercase;
+    font-weight:bold;
+    background-color: var(--hard-surface-blue);
+    color: var(--white);
+}
+
+/** Match CSS **/
+
 /* .match-container{
     display:flex;
     flex-flow: row wrap;
@@ -22,7 +59,7 @@
 
 .match-container{
     display:grid;
-    grid-template-columns: repeat(2, minmax(auto,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: space-around;
     gap: 0.5rem;
 }
