@@ -45,7 +45,6 @@
     width:100%;
 }
 
-
 .player-spec-container{
     background-color: var(--light-grey);
     padding: 0.5em;
@@ -75,12 +74,14 @@
         
 
 .player-first-name{
+    font-weight:bold;
     font-size: 0.6rem;
     color: var(--grey);
     border-bottom: 2px solid transparent;
 }
 
 .player-last-name{
+    font-weight: bold;
     border-bottom: 2px solid transparent;
 }
 
