@@ -14,6 +14,7 @@
 }
 
 .player-card{
+    margin-top: 1em;
     flex: 0 1 200px;
     text-decoration: none;
 }
@@ -23,7 +24,8 @@
 }
 
 /* The parent of this psuedo element is the .player-img-container i guess?*/
-.player-img-container::before{
+/* .player-img-container::before, .player-headshot-img-container::before{ */
+    .player-img-container::before{
     content:"";
     background-color: var(--wta-purple);
     height:65%;
@@ -43,6 +45,18 @@
     position:absolute;
     bottom:-130%;
     width:100%;
+}
+
+.player-img-container .player-headshot-img {
+	border: 5px solid white;
+	display: block;
+	border-radius: 150%;
+	width: 35%;
+	height: 100%;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 .player-spec-container{

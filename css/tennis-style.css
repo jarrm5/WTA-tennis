@@ -60,7 +60,9 @@
 .profile-img img{
     /* Prevents the image overflow */
     width: 100%;
+    /* Allows the img to be responsive; browser will adjust height on the fly */
     height: auto;
+    /* minimums set to the width,height in the html so img won't shrink smaller than these values */
     min-height: 230px;
     min-width: 340px;
 }
