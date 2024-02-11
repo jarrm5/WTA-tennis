@@ -16,5 +16,5 @@ todo
 3. add scores page
 4. add purple underline when you are on scores page (or any active page) - might need javascript
 5. Add ranking, checkmark next to winner in the match box
-6. Camila Giorgi pic
+6. (done) Camila Giorgi pic
 7. Media query on the player page
