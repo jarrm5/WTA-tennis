@@ -53,7 +53,7 @@ header{
 .logo{
     min-width: 150px;
     width: 20%;
-    padding:0.5em;
+    padding-right:0.5em;
 }
 
 .logo a img{
@@ -117,6 +117,7 @@ header{
 .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
     opacity: 1;
     pointer-events: auto;
+    /* Should be a rem value since a translate percent is based on the element's height and both dropdowns are different heights */
     transform: translateY(1.2rem);
 }
 
@@ -130,7 +131,8 @@ header{
     display:flex;
     flex-flow: column nowrap;
     position: absolute;
-    top: 2rem;
+    /* 50% of the height of the parent element */
+    top:50%;
     transition: transform 1s ease-in-out;
     opacity: 0;
     pointer-events: none;

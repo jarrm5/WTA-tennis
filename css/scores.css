@@ -69,7 +69,6 @@
 }
 
 .tournament-spec{
-    /* background: var(--black); */
     color: var(--white);
     display:flex;
     flex-direction:column;
@@ -77,11 +76,6 @@
 
 .tournament-location{
     font-weight: bold;
-    /* padding: 0.10em 0 0.10em 0;  */
-}
-
-.tournament-name{
-    /* padding: 0.10em 0 0.10em 0;  */
 }
 
 /** Match CSS **/

@@ -9,7 +9,7 @@ bugs
 7. clicking anywhere on the link on main nav li should take me to the page, only works for clicking the actual anchor tag
 8. Fix the font across the site to be less bold in some places
 9. Main nav bar should not overlap the surface and tournaments aside on the scores page.
-10. Need new main logo
+10. (done) Need new main logo
 
 todo
 
