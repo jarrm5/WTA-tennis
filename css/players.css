@@ -48,7 +48,6 @@
 }
 .player-img-container .player-headshot-img {
 	border: 5px solid white;
-	display: block;
 	border-radius: 150%;
 	width: 35%;
 	height: 100%;

@@ -21,6 +21,7 @@
 
 .tournaments-and-surface-aside{
     position:sticky;
+    /* z-index:0; */
     top:0;
 }
 
@@ -60,24 +61,26 @@
 
 .tournament-aside-wrapper{
     display:flex;
-    /* flex-flow: row wrap; */
-}
-
-/* .tournament-aside-wrapper img{
+    flex-flow: row wrap;
     background-color: var(--black);
-} */
+    /* padding:0.25em; */
+    gap: 0.35rem;
+}
 
 .tournament-spec{
-    background: var(--black);
+    /* background: var(--black); */
     color: var(--white);
     display:flex;
-    flex-flow: column nowrap;
-    width: 100%;
+    flex-direction:column;
 }
-
 
 .tournament-location{
     font-weight: bold;
+    /* padding: 0.10em 0 0.10em 0;  */
+}
+
+.tournament-name{
+    /* padding: 0.10em 0 0.10em 0;  */
 }
 
 /** Match CSS **/
