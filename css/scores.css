@@ -151,6 +151,10 @@
     color: var(--grey);
 }
 
+.checkmark{
+    color: var(--checkmark-green);
+}
+
 .match-player-container:nth-child(1){
     border-left: 3px solid var(--wta-purple);
 }
