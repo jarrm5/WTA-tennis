@@ -45,6 +45,7 @@ body{
 
 header{
     display:flex;
+    gap:1.5rem;
     background-color: var(--white);
     position:sticky;
     top:0;
@@ -54,7 +55,6 @@ header{
 .logo{
     min-width: 200px;
     width: 30%;
-    padding-right:0.5em;
 }
 
 .logo a img{

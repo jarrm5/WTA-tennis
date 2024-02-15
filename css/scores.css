@@ -145,6 +145,7 @@
     font-size: calc(var(--small-fontSize) * 0.75);
     font-weight:bold;
     gap:0.25rem;
+    width:100%;
 }
 
 .match-player-first-initial{
@@ -153,6 +154,7 @@
 
 .checkmark{
     color: var(--checkmark-green);
+    margin-left:auto;
 }
 
 .match-player-container:nth-child(1){
