@@ -59,6 +59,8 @@
     color: var(--white);
 }
 
+
+
 .tournament-aside-wrapper{
     display:flex;
     flex-flow: row wrap;
@@ -90,9 +92,13 @@
     flex: 0 0 45%;
 } */
 
+.match-wrapper-title{
+    margin: 0.5em 0;
+}
+
 .match-container{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     justify-content: space-around;
     gap: 0.5rem;
 }
@@ -148,7 +154,7 @@
     width:100%;
 }
 
-.match-player-first-initial{
+.match-player-first-initial, .ranking{
     color: var(--grey);
 }
 
