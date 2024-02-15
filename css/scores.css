@@ -154,8 +154,15 @@
     width:100%;
 }
 
-.match-player-first-initial, .ranking{
+.match-player-first-initial {
     color: var(--grey);
+}
+
+.ranking{
+    height:100%;
+    font-size: calc(var(--small-fontSize) * .60);
+    color: var(--wta-purple);
+    font-weight:300;
 }
 
 .checkmark{
