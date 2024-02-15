@@ -12,7 +12,15 @@
     --lightest-grey: #f2f2f2;
     --white: #fff;
     --hard-surface-blue: #017bb3;
+
+    /*misc colors*/
     --checkmark-green: #115503;
+    --facebook-blue: #117df2;
+    --twitter-blue: #55acee;
+    --youtube-red: #b00;
+    --instagram-pink: #f50403;
+    --weibo-red: #e0152c;
+    --snapchat-yellow: #fbff0a;
 
     /* --profile-value-small: 0.75rem; */
     --large-fontSize: 2rem;
@@ -36,6 +44,10 @@ html {
     /* font-family: 'Nunito', sans-serif; */
     /* font-family: 'Neuton', serif; */
     font-family: 'Lato', sans-serif;
+}
+
+ul{
+    list-style-type: none;
 }
 
 body{
@@ -173,4 +185,53 @@ header{
 
 .list-item-dropdown:hover a, .list-item-dropdown:focus a {
     border-bottom: 2px solid var(--white);
+}
+
+/* footer */
+
+footer{
+    padding:0.5em;
+}
+
+.footer-social-container{
+    margin:0.5em;
+    display:grid;
+    grid-template-columns: repeat(autofit, minmax(15%,auto));
+}
+
+.footer-header{
+    font-size: calc(var(--med-fontSize) * 0.75);
+    border-bottom: 3px solid var(--wta-purple);
+    text-align:center;
+    padding: 0.5em;
+}
+
+.footer-social-item{
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--small-fontSize)
+}
+
+.facebook{
+    background-color: var(--facebook-blue);
+}
+
+.twitter{
+    background-color: var(--twitter-blue);
+}
+
+.youtube{
+    background-color:var(--youtube-red);
+}
+
+.instagram{
+    background-color: var(--instagram-pink);
+}
+
+.weibo{
+    background-color: var(--weibo-red);
+}
+
+.snapchat{
+    background-color: var(--snapchat-yellow);
 }
