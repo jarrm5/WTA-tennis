@@ -18,7 +18,9 @@
     --facebook-blue: #117df2;
     --twitter-blue: #55acee;
     --youtube-red: #b00;
-    --instagram-pink: #f50403;
+    --instagram-gradient-purple: #ba00b2;
+    --instagram-gradient-pink: #d40263;
+    --instagram-gradient-red: #f50403;
     --weibo-red: #e0152c;
     --snapchat-yellow: #fbff0a;
 
@@ -249,7 +251,11 @@ footer{
 }
 
 .instagram{
-    background-color: var(--instagram-pink);
+    background: linear-gradient(45deg, 
+    var(--instagram-gradient-purple), 
+    var(--instagram-gradient-pink), 
+    var(--instagram-gradient-red))
+    /* background-color: var(--instagram-pink); */
 }
 
 .weibo{
