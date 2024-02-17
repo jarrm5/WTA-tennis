@@ -74,13 +74,8 @@ body{
 }
 
 .main-nav{
+    width:100%;
    background-color:var(--light-grey);
-}
-
-.main-nav > ul{
-    /* display:flex; */
-    /* justify-content:space-around; */
-    /* gap: 0.25rem; */
 }
 
 .list-item-main, .list-item-main-dropdown{
@@ -182,23 +177,19 @@ footer{
     }
 
     .logo{
-        min-width: 200px;
-        width: 30%;
+        min-width: 190px;
+        width: 25%;
     }
 
     .logo a img{
         width:100%;
     }
 
-    .main-nav{
-        /* main-nav will fill the rest of the horizontal splace of header element */
-        flex:1 1 90%;
-    }
-
     .main-nav > ul{
+        display:flex;
+        justify-content:space-evenly;
         height:100%;
         flex-flow: row nowrap;
-        gap: 1rem;
         background-color: var(--white);
     }
 
@@ -206,7 +197,7 @@ footer{
         font-weight: bolder;
         font-size: 0.75rem;
         height: 100%;
-        padding: 1em;
+        padding: 1em 0.65em;
         display:flex;
         flex-flow: column nowrap;
         justify-content:center;
@@ -247,7 +238,7 @@ footer{
         opacity: 1;
         pointer-events: auto;
         /* Should be a rem value since a translate percent is based on the element's height and both dropdowns are different heights */
-        transform: translateY(1.2rem);
+        transform: translateY(0.75rem);
     }
 
     .list-item-main-dropdown:hover::after, .list-item-main-dropdown:focus::after{
@@ -261,8 +252,8 @@ footer{
         flex-flow: column nowrap;
         position: absolute;
         /* 50% of the height of the parent element */
-        top:50%;
-        transition: transform 1s ease-in-out;
+        top:65%;
+        transition: transform .5s ease-in-out;
         opacity: 0;
         pointer-events: none;
         width:max-content;
