@@ -75,7 +75,7 @@ body{
 
 .main-nav{
     width:100%;
-   background-color:var(--light-grey);
+    background-color:var(--light-grey);
 }
 
 .list-item-main, .list-item-main-dropdown{
@@ -86,7 +86,7 @@ body{
 }
 
 .list-item-main a, .list-item-main-dropdown a{
-    font-size: calc(var(--small-fontSize));
+    font-size: var(--small-fontSize);
     font-weight: bold;
     color: var(--black);
     text-align:center;
@@ -169,20 +169,11 @@ footer{
 @media screen and (min-width:650px){
     header{
         display:flex;
-        gap:1.5rem;
+        gap:1rem;
         background-color: var(--white);
         position:sticky;
         top:0;
         z-index:1;
-    }
-
-    .logo{
-        min-width: 190px;
-        width: 25%;
-    }
-
-    .logo a img{
-        width:100%;
     }
 
     .main-nav > ul{
@@ -194,20 +185,13 @@ footer{
     }
 
     .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
-        font-weight: bolder;
-        font-size: 0.75rem;
-        height: 100%;
         padding: 1em 0.65em;
-        display:flex;
         flex-flow: column nowrap;
-        justify-content:center;
-        align-items: center;
         border-bottom: 3px solid transparent;
         cursor:pointer;
         position:relative;
     }
     .list-item-main a{
-        height: 100%;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -281,6 +265,9 @@ footer{
 
     .list-item-dropdown{
         padding: 0.6em;
+        display:flex;
+        justify-content:center;
+        align-items:center
     }
 
     .list-item-dropdown > a{
@@ -288,6 +275,7 @@ footer{
         color: var(--white);
         font-size: .60rem;
         border-bottom: 2px solid transparent;
+        width: fit-content;
     }
 
     .list-item-dropdown:hover a, .list-item-dropdown:focus a {
