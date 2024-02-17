@@ -166,7 +166,7 @@ footer{
     color: var(--light-grey);
 }
 
-@media screen and (min-width:461px){
+@media screen and (min-width:650px){
     header{
         display:flex;
         gap:1.5rem;
