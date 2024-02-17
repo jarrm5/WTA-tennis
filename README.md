@@ -23,3 +23,4 @@ todo
 5. Add ranking, checkmark next to winner in the match box
 6. (done) Camila Giorgi pic
 7. Media query on the player page
+8. mobile first css refactoring

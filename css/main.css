@@ -37,232 +37,243 @@
     box-sizing: border-box;
 }
 
-img{
+img, a{
     display:block;
 }
 
 html {
     font-size: 1.2rem;
-    /* font-family: 'Nunito', sans-serif; */
-    /* font-family: 'Neuton', serif; */
     font-family: 'Lato', sans-serif;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 body{
     background-color: var(--white);
-    
-}
-
-header{
-    display:flex;
-    gap:1.5rem;
-    background-color: var(--white);
-    position:sticky;
-    top:0;
-    z-index:1;
-}
-
-.logo{
-    min-width: 200px;
-    width: 30%;
 }
 
 .logo a img{
-    width:100%;
-}
-
-.main-nav{
-    /* main-nav will fill the rest of the horizontal splace of header element */
-    flex:1 1 90%;
-}
-
-.main-nav > ul{
-    height:100%;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 1rem;
-}
-
-.list-item-main, .list-item-main-dropdown, .list-item-dropdown{
-    font-weight: bolder;
-    font-size: 0.75rem;
-    height: 100%;
-    padding: 1em;
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content:center;
-    align-items: center;
-    border-bottom: 3px solid transparent;
-    cursor:pointer;
-    position:relative;
-}
-.list-item-main a{
-    height: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
-    border-bottom: 3px solid var(--wta-purple);
-}
-
-.list-item-main-dropdown::after{
-    content: "";
-    width: 0;
-    border-style: solid;
-    border-width: 0.25em 0.25em;
-    border-color: var(--grey) transparent transparent;
-    position:absolute;
-    top:47.5%;
-    right:0;
-    transition: transform 0.5s;
-}
-
-.list-item-main > a,  .list-item-main-dropdown > a{
-    text-decoration: none;
-    color: var(--black);
-}
-
-.list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
-    opacity: 1;
-    pointer-events: auto;
-    /* Should be a rem value since a translate percent is based on the element's height and both dropdowns are different heights */
-    transform: translateY(1.2rem);
-}
-
-.list-item-main-dropdown:hover::after, .list-item-main-dropdown:focus::after{
-    transform: rotate(180deg);
+    width: 100%;
+    padding: 0.5em 0;
 }
 
 .dropdown-list{
-    background-color: var(--black);
-    color: var(--white);
+    display:none;
+}
+
+.main-nav ul{
     display:flex;
-    flex-flow: column nowrap;
-    position: absolute;
-    /* 50% of the height of the parent element */
-    top:50%;
-    transition: transform 1s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-    width:max-content;
 }
 
-.dropdown-list::before{
-    content: "";
-    width: min-content;
-    border-style: solid;
-    /* border-top,border-left and right, border-bottom */
-    border-width: 0.35em 0.35em;
-    /* border-top,border-left and right, border-bottom */
-    border-color: transparent transparent var(--black);
-    /* positioned relative to .dropdown */
-    position:absolute;
-    /* percentage of the containing block's height */
-    /* top:-5.5%; */
-    /* use rems unit to keep same top positioning on both dropdowns  */
-    top:-0.5rem;
-    /*combination of these 3 props centers the arrow relative to the dropdown */
-    right:0;
-    left:0;
-    margin:0 auto;
-}
+@media screen and (min-width:461px){
+    header{
+        display:flex;
+        gap:1.5rem;
+        background-color: var(--white);
+        position:sticky;
+        top:0;
+        z-index:1;
+    }
 
-.list-item-dropdown{
-    padding: 0.6em;
-}
+    .logo{
+        min-width: 200px;
+        width: 30%;
+    }
 
-.list-item-dropdown > a{
-    text-decoration: none;
-    color: var(--white);
-    font-size: .60rem;
-    border-bottom: 2px solid transparent;
-}
+    .logo a img{
+        width:100%;
+    }
 
-.list-item-dropdown:hover a, .list-item-dropdown:focus a {
-    border-bottom: 2px solid var(--white);
-}
+    .main-nav{
+        /* main-nav will fill the rest of the horizontal splace of header element */
+        flex:1 1 90%;
+    }
 
-/* footer */
+    .main-nav > ul{
+        height:100%;
+        list-style-type: none;
+        flex-flow: row nowrap;
+        gap: 1rem;
+    }
 
-footer{
-    padding:0.5em;
-}
+    .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
+        font-weight: bolder;
+        font-size: 0.75rem;
+        height: 100%;
+        padding: 1em;
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 3px solid transparent;
+        cursor:pointer;
+        position:relative;
+    }
+    .list-item-main a{
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.footer-social-container{
-    margin:0.5em;
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-    gap: 1rem;
-}
+    .list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
+        border-bottom: 3px solid var(--wta-purple);
+    }
 
-.footer-header{
-    font-size: calc(var(--med-fontSize) * 0.75);
-    border-bottom: 3px solid var(--wta-purple);
-    text-align:center;
-    padding: 0.5em;
-}
+    .list-item-main-dropdown::after{
+        content: "";
+        width: 0;
+        border-style: solid;
+        border-width: 0.25em 0.25em;
+        border-color: var(--grey) transparent transparent;
+        position:absolute;
+        top:47.5%;
+        right:0;
+        transition: transform 0.5s;
+    }
 
-.footer-social-item a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding: .3em;
-}
+    .list-item-main > a,  .list-item-main-dropdown > a{
+        text-decoration: none;
+        color: var(--black);
+    }
 
-.footer-social-item a{
-    color: var(--white);
-    font-weight: bold;
-    font-size: var(--small-fontSize);
-}
+    .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
+        opacity: 1;
+        pointer-events: auto;
+        /* Should be a rem value since a translate percent is based on the element's height and both dropdowns are different heights */
+        transform: translateY(1.2rem);
+    }
 
-.footer-social-item a img{
-    margin-right: 0.5em;
-}
+    .list-item-main-dropdown:hover::after, .list-item-main-dropdown:focus::after{
+        transform: rotate(180deg);
+    }
 
-.facebook{
-    background-color: var(--facebook-blue);
-}
+    .dropdown-list{
+        background-color: var(--black);
+        color: var(--white);
+        display:flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        /* 50% of the height of the parent element */
+        top:50%;
+        transition: transform 1s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+        width:max-content;
+    }
 
-.twitter{
-    background-color: var(--twitter-blue);
-}
+    .dropdown-list::before{
+        content: "";
+        width: min-content;
+        border-style: solid;
+        /* border-top,border-left and right, border-bottom */
+        border-width: 0.35em 0.35em;
+        /* border-top,border-left and right, border-bottom */
+        border-color: transparent transparent var(--black);
+        /* positioned relative to .dropdown */
+        position:absolute;
+        /* percentage of the containing block's height */
+        /* top:-5.5%; */
+        /* use rems unit to keep same top positioning on both dropdowns  */
+        top:-0.5rem;
+        /*combination of these 3 props centers the arrow relative to the dropdown */
+        right:0;
+        left:0;
+        margin:0 auto;
+    }
 
-.twitter a img{
-    border-radius:50%;
-}
+    .list-item-dropdown{
+        padding: 0.6em;
+    }
 
-.youtube{
-    background-color:var(--youtube-red);
-}
+    .list-item-dropdown > a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: .60rem;
+        border-bottom: 2px solid transparent;
+    }
 
-.youtube a img{
-    border-radius:20%;
-}
+    .list-item-dropdown:hover a, .list-item-dropdown:focus a {
+        border-bottom: 2px solid var(--white);
+    }
 
-.instagram{
-    background: linear-gradient(45deg, 
-    var(--instagram-gradient-purple), 
-    var(--instagram-gradient-pink), 
-    var(--instagram-gradient-red))
-    /* background-color: var(--instagram-pink); */
-}
+    /* footer */
 
-.weibo{
-    background-color: var(--weibo-red);
-}
+    footer{
+        padding:0.5em;
+    }
 
-.snapchat a{
-    background-color: var(--snapchat-yellow);
-    color: var(--light-grey);
+    .footer-social-container{
+        margin:0.5em;
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+        gap: 1rem;
+    }
+
+    .footer-header{
+        font-size: calc(var(--med-fontSize) * 0.75);
+        border-bottom: 3px solid var(--wta-purple);
+        text-align:center;
+        padding: 0.5em;
+    }
+
+    .footer-social-item a{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding: .3em;
+    }
+
+    .footer-social-item a{
+        color: var(--white);
+        font-weight: bold;
+        font-size: var(--small-fontSize);
+    }
+
+    .footer-social-item a img{
+        margin-right: 0.5em;
+    }
+
+    .facebook{
+        background-color: var(--facebook-blue);
+    }
+
+    .twitter{
+        background-color: var(--twitter-blue);
+    }
+
+    .twitter a img{
+        border-radius:50%;
+    }
+
+    .youtube{
+        background-color:var(--youtube-red);
+    }
+
+    .youtube a img{
+        border-radius:20%;
+    }
+
+    .instagram{
+        background: linear-gradient(45deg, 
+        var(--instagram-gradient-purple), 
+        var(--instagram-gradient-pink), 
+        var(--instagram-gradient-red))
+        /* background-color: var(--instagram-pink); */
+    }
+
+    .weibo{
+        background-color: var(--weibo-red);
+    }
+
+    .snapchat a{
+        background-color: var(--snapchat-yellow);
+        color: var(--light-grey);
+    }
 }
