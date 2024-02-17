@@ -91,6 +91,74 @@ body{
 }
 
 /* FOOTER */
+footer{
+    padding:0.5em;
+}
+
+.footer-header{
+    font-size: calc(var(--med-fontSize) * 0.5);
+    border-bottom: 3px solid var(--wta-purple);
+    text-align:center;
+    padding: 0.5em;
+}
+
+.footer-social-container{
+    margin:0.5em;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    gap: 0.5rem;
+}
+
+.footer-social-item a{
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--small-fontSize);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: .3em;
+}
+
+.footer-social-item a img{
+    margin-right: 0.5em;
+}
+
+.facebook{
+    background-color: var(--facebook-blue);
+}
+
+.twitter{
+    background-color: var(--twitter-blue);
+}
+
+.twitter a img{
+    border-radius:50%;
+}
+
+.youtube{
+    background-color:var(--youtube-red);
+}
+
+.youtube a img{
+    border-radius:20%;
+}
+
+.instagram{
+    background: linear-gradient(45deg, 
+    var(--instagram-gradient-purple), 
+    var(--instagram-gradient-pink), 
+    var(--instagram-gradient-red))
+    /* background-color: var(--instagram-pink); */
+}
+
+.weibo{
+    background-color: var(--weibo-red);
+}
+
+.snapchat a{
+    background-color: var(--snapchat-yellow);
+    color: var(--light-grey);
+}
 
 @media screen and (min-width:461px){
     header{
@@ -226,75 +294,11 @@ body{
 
     /* footer */
 
-    footer{
-        padding:0.5em;
-    }
-
     .footer-social-container{
-        margin:0.5em;
-        display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
         gap: 1rem;
     }
 
     .footer-header{
         font-size: calc(var(--med-fontSize) * 0.75);
-        border-bottom: 3px solid var(--wta-purple);
-        text-align:center;
-        padding: 0.5em;
-    }
-
-    .footer-social-item a{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding: .3em;
-    }
-
-    .footer-social-item a{
-        color: var(--white);
-        font-weight: bold;
-        font-size: var(--small-fontSize);
-    }
-
-    .footer-social-item a img{
-        margin-right: 0.5em;
-    }
-
-    .facebook{
-        background-color: var(--facebook-blue);
-    }
-
-    .twitter{
-        background-color: var(--twitter-blue);
-    }
-
-    .twitter a img{
-        border-radius:50%;
-    }
-
-    .youtube{
-        background-color:var(--youtube-red);
-    }
-
-    .youtube a img{
-        border-radius:20%;
-    }
-
-    .instagram{
-        background: linear-gradient(45deg, 
-        var(--instagram-gradient-purple), 
-        var(--instagram-gradient-pink), 
-        var(--instagram-gradient-red))
-        /* background-color: var(--instagram-pink); */
-    }
-
-    .weibo{
-        background-color: var(--weibo-red);
-    }
-
-    .snapchat a{
-        background-color: var(--snapchat-yellow);
-        color: var(--light-grey);
-    }
+    } 
 }
