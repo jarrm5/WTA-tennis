@@ -87,6 +87,7 @@ body{
 
 .list-item-main a, .list-item-main-dropdown a{
     font-size: calc(var(--small-fontSize)* 0.75);
+    font-weight: bold;
     color: var(--black);
 }
 
@@ -228,8 +229,8 @@ footer{
     }
 
     .list-item-main > a,  .list-item-main-dropdown > a{
-        text-decoration: none;
         color: var(--black);
+        font-size: calc(var(--small-fontSize));
     }
 
     .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
@@ -293,7 +294,6 @@ footer{
     }
 
     /* footer */
-
     .footer-social-container{
         gap: 1rem;
     }
