@@ -18,9 +18,10 @@ todo
 
 1. (done) add dropdown animation
 2. (done) add arrows to main nav, dropdown menu box
-3. add scores page
+3. (done) add scores page
 4. add purple underline when you are on scores page (or any active page) - might need javascript
-5. Add ranking, checkmark next to winner in the match box
+5. (done) Add ranking, checkmark next to winner in the match box
 6. (done) Camila Giorgi pic
-7. Media query on the player page
+7. Rework individual player page
 8. mobile first css refactoring
+9. 

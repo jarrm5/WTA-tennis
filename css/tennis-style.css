@@ -81,7 +81,7 @@
 }
 
 .ranking {
-    font-size: var(--ranking-fontSize);
+    /* font-size: var(--ranking-fontSize); */
     font-weight: 900;
 }
 
@@ -102,15 +102,11 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: stretch;
-        /* flex: 2 1 66%; */
     }
     
     .profile-right{
         display:flex;
-        /* flex: 1 2 33%; */
     }
-    
-    
     
     .profile-img {
         /* stretches the box to the bottom of the container */
