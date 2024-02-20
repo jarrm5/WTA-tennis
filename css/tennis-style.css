@@ -1,60 +1,28 @@
 .profile-card{
     display:flex;
-    flex-flow: row nowrap;
-}
-
-.profile-left{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: stretch;
-    /* flex: 2 1 66%; */
-}
-
-.profile-right{
-    display:flex;
-    /* flex: 1 2 33%; */
-}
-
-.profile-divide {
-	background-color: var(--wta-purple);
-	color: var(--white);
-	padding: 0.75em;
-	margin: 0.25em;
+    flex-direction: column;
 }
 
 .profile-ranking{
     display:flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .profile-bold{
     font-weight: 900;
 }
 
-.profile-value-largest {
-    font-size: var(--large-fontSize);
-}
-
-.profile-value-large {
-    font-size: var(--med-fontSize);
-}
-
-.profile-value-small {
-    font-size: var(--small-fontSize);
-}
-
-.ranking {
-    font-size: var(--ranking-fontSize);
-}
-
-.profile-ranking{
-    padding:0 calc(0.75em * 2);
+.profile-divide {
+    background-color: var(--wta-purple);
+    color: var(--white);
+    padding: 0.75em;
+    margin: 0.25em;
 }
 
 .profile-img {
     background-color: var(--lightest-grey);
-    /* stretches the box to the bottom of the container */
-    flex-grow: 1;
 }
 
 .profile-img img{
@@ -62,9 +30,6 @@
     width: 100%;
     /* Allows the img to be responsive; browser will adjust height on the fly */
     height: auto;
-    /* minimums set to the width,height in the html so img won't shrink smaller than these values */
-    min-height: 230px;
-    min-width: 340px;
 }
 
 /** Profile details **/
@@ -91,4 +56,59 @@
 
 .profile-spec{
     margin-bottom: 1em;
+}
+
+@media screen and (min-width:650px){ 
+    .profile-card{
+        flex-flow: row nowrap;
+    }
+
+    .profile-ranking{
+        flex-flow: column nowrap;
+    }
+    
+    .profile-left{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+        /* flex: 2 1 66%; */
+    }
+    
+    .profile-right{
+        display:flex;
+        /* flex: 1 2 33%; */
+    }
+    
+    .profile-value-largest {
+        font-size: var(--large-fontSize);
+    }
+    
+    .profile-value-large {
+        font-size: var(--med-fontSize);
+    }
+    
+    .profile-value-small {
+        font-size: var(--small-fontSize);
+    }
+    
+    .ranking {
+        font-size: var(--ranking-fontSize);
+    }
+    
+    .profile-ranking{
+        padding:0 calc(0.75em * 2);
+    }
+    
+    .profile-img {
+        /* stretches the box to the bottom of the container */
+        flex-grow: 1;
+    }
+    
+    .profile-img img{
+        /* minimums set to the width,height in the html so img won't shrink smaller than these values */
+        min-height: 230px;
+        min-width: 340px;
+    }
+    
+    
 }
