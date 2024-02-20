@@ -1,6 +1,6 @@
 .profile-card{
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .profile-ranking{
@@ -19,6 +19,11 @@
     color: var(--white);
     padding: 0.75em;
     margin: 0.25em;
+}
+
+.profile-name{
+    display:flex;
+    gap: 0.5rem;
 }
 
 .profile-img {
@@ -58,6 +63,26 @@
     margin-bottom: 1em;
 }
 
+.profile-value-largest {
+    font-size: var(--large-fontSize);
+}
+
+.profile-value-large {
+    font-size: var(--med-fontSize);
+}
+
+.profile-value-small {
+    font-size: var(--small-fontSize);
+}
+
+.ranking {
+    font-size: var(--ranking-fontSize);
+}
+
+.profile-ranking{
+    padding:0 calc(0.75em * 2);
+}
+
 @media screen and (min-width:650px){ 
     .profile-card{
         flex-flow: row nowrap;
@@ -79,25 +104,7 @@
         /* flex: 1 2 33%; */
     }
     
-    .profile-value-largest {
-        font-size: var(--large-fontSize);
-    }
     
-    .profile-value-large {
-        font-size: var(--med-fontSize);
-    }
-    
-    .profile-value-small {
-        font-size: var(--small-fontSize);
-    }
-    
-    .ranking {
-        font-size: var(--ranking-fontSize);
-    }
-    
-    .profile-ranking{
-        padding:0 calc(0.75em * 2);
-    }
     
     .profile-img {
         /* stretches the box to the bottom of the container */
