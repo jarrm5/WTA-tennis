@@ -30,7 +30,7 @@
     padding-top: 6em;
     background-color: var(--light-grey);
     position:relative;
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 .player-img-container img{
@@ -39,7 +39,7 @@
     max-height:350px;
     position:absolute;
     left:2.5rem;
-    bottom:-100%;
+    bottom:-50%;
 }
 
 .player-body-wrapper{
