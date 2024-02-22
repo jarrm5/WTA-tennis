@@ -4,12 +4,45 @@
     font-size: calc(var(--med-fontSize) * 0.75);
 }
 
-.player-ranking, .player-specs-wrapper{
+.player-wrapper, .player-header-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.player-ranking, .player-body-wrapper{
     padding: 0.5em;
     background: var(--wta-purple);
 }
 
-.player-specs-wrapper{
+.player-ranking p:nth-child(2){
+    font-size: calc(var(--large-fontSize) * 1.5);
+    font-weight: bold;
+}
+
+/* .player-img-container::before{
+    content:"";
+    padding: 5em;
+    background-color: var(--light-grey);
+} */
+
+.player-img-container{
+    padding-top: 6em;
+    background-color: var(--light-grey);
+    position:relative;
+    /* overflow:hidden; */
+}
+
+.player-img-container img{
+    width:100%;
+    /* height:auto; */
+    max-height:350px;
+    position:absolute;
+    left:2.5rem;
+    bottom:-100%;
+}
+
+.player-body-wrapper{
     display:flex;
     flex-direction:column;
     gap: 1rem;
