@@ -9,12 +9,51 @@
     background: var(--wta-purple);
 }
 
+.player-specs-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
 .player-name{
     font-weight: bold;
 }
 
 .player-name p:nth-child(2){
     font-size: var(--large-fontSize);
+}
+
+.player-origin-country{
+    display:flex;
+    gap: 0.5rem;
+}
+
+.player-origin-country p{
+    display:flex;
+    align-items:center;
+    text-transform: uppercase;
+}
+
+.player-attr-grid{
+    display:grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-template-rows: repeat(2,auto);
+    gap:1rem;
+    grid-auto-flow: column;
+}
+
+.player-attr-name{
+    font-size: var(--med-fontSize);
+}
+
+.player-attr-value-lg{
+    font-size: calc(var(--med-fontSize) * 1.25);
+    font-weight: bold;
+}
+
+.player-attr-value-sm{
+    font-size: var(--small-fontSize);
+    opacity: 0.5;
 }
 
 @media screen and (min-width:650px){ 
