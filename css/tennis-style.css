@@ -20,26 +20,27 @@
     font-weight: bold;
 }
 
-/* .player-img-container::before{
-    content:"";
-    padding: 5em;
-    background-color: var(--light-grey);
-} */
-
-.player-img-container{
-    padding-top: 6em;
-    background-color: var(--light-grey);
+.player-header-wrapper{
     position:relative;
     overflow:hidden;
 }
 
-.player-img-container img{
+.player-header-wrapper::after{
+    content:"";
+    display:block;
+    padding-top: 5em;
+    background-color: var(--light-grey);
+}
+
+.player-header-wrapper img{
     width:100%;
     /* height:auto; */
     max-height:350px;
+    /* background-color: var(--light-grey); */
     position:absolute;
-    left:2.5rem;
-    bottom:-50%;
+    right:0;
+    bottom:-45%;
+    /* bottom: 0; */
 }
 
 .player-body-wrapper{
