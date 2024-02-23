@@ -33,14 +33,12 @@
 }
 
 .player-header-wrapper img{
-    width:100%;
+    width:450px;
     /* height:auto; */
-    max-height:350px;
-    /* background-color: var(--light-grey); */
+    height:400px;
     position:absolute;
-    right:0;
-    bottom:-45%;
-    /* bottom: 0; */
+    /* left:0; */
+    bottom:-70%;
 }
 
 .player-body-wrapper{
