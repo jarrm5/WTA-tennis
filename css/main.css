@@ -192,6 +192,10 @@ footer{
         background-color: var(--white);
     }
 
+    .main-nav > ul > * {
+        flex-basis: 100%;
+    }
+
     .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
         padding: 1em 0.65em;
         flex-flow: column nowrap;
@@ -199,12 +203,17 @@ footer{
         cursor:pointer;
         position:relative;
     }
+
+    .list-item-main-dropdown{
+        /* prevents News & video link from line breaking on smaller screens */
+        white-space: nowrap;
+    }
+
     .list-item-main a{
         display:flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        flex-basis: 100%;
     }
 
     .list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
@@ -221,10 +230,6 @@ footer{
         top:47.5%;
         right:0;
         transition: transform 0.5s;
-    }
-
-    .list-item-main > a{
-        
     }
 
     .list-item-main > a,  .list-item-main-dropdown > a{
