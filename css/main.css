@@ -203,6 +203,8 @@ footer{
         display:flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        flex-basis: 100%;
     }
 
     .list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
@@ -222,7 +224,7 @@ footer{
     }
 
     .list-item-main > a{
-        height: 100%;
+        
     }
 
     .list-item-main > a,  .list-item-main-dropdown > a{
