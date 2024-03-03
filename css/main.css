@@ -221,6 +221,10 @@ footer{
         transition: transform 0.5s;
     }
 
+    .list-item-main > a{
+        height: 100%;
+    }
+
     .list-item-main > a,  .list-item-main-dropdown > a{
         color: var(--black);
         font-size: calc(var(--small-fontSize));
