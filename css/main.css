@@ -173,10 +173,20 @@ footer{
     color: var(--light-grey);
 }
 
+@media screen and (min-width:481px){
+    
+}
+
 @media screen and (min-width:650px){
+
+    /* We need the logo on top, nav beneath it
+    Between 650 and 750px, the last nav link is cut off*/ 
+
+    /* MAIN NAV */
+
     header{
         display:flex;
-        gap:1rem;
+        flex-direction: column;
         background-color: var(--white);
         position:sticky;
         top:0;
@@ -301,7 +311,7 @@ footer{
         border-bottom: 2px solid var(--white);
     }
 
-    /* footer */
+    /* FOOTER */
     .footer-social-container{
         flex-flow: row wrap;
         justify-content: center;
@@ -314,4 +324,12 @@ footer{
     .footer-header{
         font-size: calc(var(--med-fontSize) * 0.75);
     } 
+}
+
+@media screen and (min-width:769px){
+    /* Add the logo, nav style of what we were used to */
+    header{
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
