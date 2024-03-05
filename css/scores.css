@@ -213,4 +213,9 @@
         gap: 0.5rem;
     }
 
+    .match-box{
+        /* prevents the overflow when screen is at 800px but match boxes start clashing into each other, need a better solution */
+        min-width: 275px;
+    }
+
 }

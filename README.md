@@ -13,6 +13,7 @@ bugs
 11. 1 match-box should take up 50% of the grid, not 100% (see the single live match-box
 12. Need utility class for coloring for completed (grey background) and live match (purple background)
 13. Live match-box should have the current score outside the final score columns
+14. match-box overflow problem on 800px screen
 
 todo
 
