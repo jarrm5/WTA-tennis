@@ -73,7 +73,11 @@ body{
 }
 
 .logo a{
-    width: fit-content;
+    width: 50%;
+}
+
+.logo a img{
+    width: 100%;
 }
 
 .dropdown-list{
@@ -191,6 +195,10 @@ footer{
         position:sticky;
         top:0;
         z-index:1;
+    }
+
+    .logo a {
+        width: fit-content;
     }
 
     .main-nav > ul{
