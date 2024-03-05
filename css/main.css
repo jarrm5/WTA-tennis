@@ -202,10 +202,6 @@ footer{
         background-color: var(--white);
     }
 
-    .main-nav > ul > * {
-        flex-basis: 100%;
-    }
-
     .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
         padding: 1em 0.65em;
         flex-flow: column nowrap;

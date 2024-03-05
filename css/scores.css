@@ -122,6 +122,11 @@
     border-bottom:1px solid var(--light-grey);
 }
 
+.match-player-container img {
+    /*Prevents the flags from shrinking due to being a flex item */
+    min-width:40px;
+}
+
 .match-player-name{
     display:flex;
     align-items:center;
