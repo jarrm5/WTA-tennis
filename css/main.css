@@ -48,7 +48,7 @@ img, a{
 }
 
 html {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /* font-family: 'Lato', sans-serif; */
     font-family: CreatoDisplay;
 }
@@ -247,7 +247,7 @@ footer{
 
     .list-item-main > a,  .list-item-main-dropdown > a{
         color: var(--black);
-        font-size: calc(var(--small-fontSize));
+        font-size: var(--small-fontSize);
     }
 
     .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
@@ -305,7 +305,7 @@ footer{
     .list-item-dropdown > a{
         text-decoration: none;
         color: var(--white);
-        font-size: .60rem;
+        font-size: var(--small-fontSize);
         border-bottom: 2px solid transparent;
         width: fit-content;
     }
@@ -336,4 +336,15 @@ footer{
         gap: 1rem;
         padding: 0 1em;
     }
+}
+
+@media screen and (min-width:1025px){
+    .list-item-main > a,  .list-item-main-dropdown > a{
+        font-size: calc(var(--med-fontSize) * 0.70);
+    }
+
+    .list-item-main-dropdown::after {
+        right: -5%;
+    }
+
 }
