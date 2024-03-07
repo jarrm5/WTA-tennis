@@ -37,9 +37,6 @@
     --ranking-fontSize: 3rem;
 
     /* scaled font based on vw*/
-    --smallscreen-font-size: 4vw;
-    --medscreen-font-size:3vw;
-    --largescreen-font-size: 2vw;
 }
 
 * {
@@ -53,7 +50,7 @@ img, a{
 }
 
 html {
-    font-size: var(--smallscreen-font-size);
+    font-size: 1.4rem;
     /* font-family: 'Lato', sans-serif; */
     font-family: CreatoDisplay;
 }
@@ -101,6 +98,7 @@ body{
 }
 
 .list-item-main > a, .list-item-main-dropdown > a{
+    font-size: var(--small-fontSize);
     font-weight: bold;
     color: var(--black);
     text-align:center;
@@ -117,6 +115,7 @@ footer{
 }
 
 .footer-header{
+    font-size: calc(var(--med-fontSize) * 0.5);
     border-bottom: 3px solid var(--wta-purple);
     text-align:center;
     padding: 0.5em;
@@ -132,6 +131,7 @@ footer{
 .footer-social-item a{
     color: var(--white);
     font-weight: bold;
+    font-size: var(--small-fontSize);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -189,10 +189,6 @@ footer{
     Between 650 and 750px, the last nav link is cut off*/ 
 
     /* MAIN NAV */
-
-    html {
-        font-size: var(--medscreen-font-size);
-    }
 
     header{
         display:flex;
@@ -253,6 +249,7 @@ footer{
 
     .list-item-main > a,  .list-item-main-dropdown > a{
         color: var(--black);
+        font-size: var(--small-fontSize);
     }
 
     .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
@@ -310,6 +307,7 @@ footer{
     .list-item-dropdown > a{
         text-decoration: none;
         color: var(--white);
+        font-size: var(--small-fontSize);
         border-bottom: 2px solid transparent;
         width: fit-content;
     }
@@ -327,14 +325,13 @@ footer{
     .footer-social-item{
         flex: 1 1 150px;
     }
+
+    .footer-header{
+        font-size: calc(var(--med-fontSize) * 0.75);
+    } 
 }
 
 @media screen and (min-width:769px){
-
-    html{
-        font-size: var(--largescreen-font-size);
-    }
-
     /* Add the logo, nav style of what we were used to */
     header{
         flex-direction: row;
@@ -344,7 +341,19 @@ footer{
 }
 
 @media screen and (min-width:1025px){
+    .list-item-main > a,  .list-item-main-dropdown > a{
+        font-size: calc(var(--med-fontSize) * 0.70);
+    }
+
     .list-item-main-dropdown::after {
         right: -5%;
+    }
+
+    .player-first-name{   
+        font-size: calc(var(--med-fontSize) * 0.70);
+    }
+
+    .player-last-name{
+        font-size: calc(var(--med-fontSize) * 0.90);
     }
 }
