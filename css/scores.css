@@ -219,11 +219,11 @@
         flex-wrap:wrap;
     }
 
-    .match-box{
-        /* prevents the overflow when screen is at 800px but match boxes start clashing into each other, need a better solution */
-        /* min-width: 275px; */
-        flex-basis:375px;
-        flex-grow: 0;
+    .match-box {
+        /* subtract out the gap so match boxes can stack horizontally */
+        flex-basis: calc(50% - 0.5rem);
+        /* prevents some match boxes from shrinking more than other match boxes with longer names */
+        min-width: 325px;
     }
 
 }
