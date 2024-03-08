@@ -340,7 +340,7 @@ footer{
     }
 }
 
-@media screen and (min-width:1025px){
+/* @media screen and (min-width:1025px){
     .list-item-main > a,  .list-item-main-dropdown > a{
         font-size: calc(var(--med-fontSize) * 0.70);
     }
@@ -356,4 +356,4 @@ footer{
     .player-last-name{
         font-size: calc(var(--med-fontSize) * 0.90);
     }
-}
+} */
