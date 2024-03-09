@@ -90,5 +90,28 @@
     .player-wrapper{
         flex-direction:row;
     }
+
+    .player-wrapper > * {
+        flex: 1;
+    }
     
+    .player-header-wrapper img {
+        right: -30%;
+        width: 145%;
+        height: 170%;
+    }
+
+    .player-header-wrapper::after{
+        flex-grow:1;
+    }
+}
+
+@media screen and (min-width:1025px){
+
+    .player-wrapper{
+        justify-content:center;
+    }
+    .player-wrapper > * {
+        max-width:600px;
+    }
 }
