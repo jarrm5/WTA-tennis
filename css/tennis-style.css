@@ -32,13 +32,11 @@
     background-color: var(--light-grey);
 }
 
-.player-header-wrapper img{
-    width:450px;
-    /* height:auto; */
-    height:400px;
-    position:absolute;
-    /* left:0; */
-    bottom:-70%;
+.player-header-wrapper img {
+	position: absolute;
+	right: -8%;
+	width: 100%;
+	height: 170%;
 }
 
 .player-body-wrapper{
@@ -89,6 +87,8 @@
 }
 
 @media screen and (min-width:650px){ 
-    
+    .player-wrapper{
+        flex-direction:row;
+    }
     
 }

@@ -197,6 +197,7 @@ footer{
         position:sticky;
         top:0;
         z-index:1;
+        padding: 1em;
     }
 
     .logo a {
@@ -337,7 +338,6 @@ footer{
     header{
         flex-direction: row;
         gap: 1rem;
-        padding: 0 1em;
     }
 }
 
