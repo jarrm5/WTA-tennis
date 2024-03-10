@@ -3,25 +3,25 @@
     margin-top: 1rem;
 }
 
-.tournament-header{
+.tournament-date{
     display:flex;
     gap: 0.5rem;
     justify-content: center;
 }
 
-.tournament-header h1{
+.tournament-date h1{
     display:flex;
     align-items: center;
 }
 
-.tournament-header-img{
+.tournament-date-img{
     padding:0.5em 1em;
     background-color: var(--lightest-grey);
     border-radius: 10px;
 }
 
 @media screen and (min-width:650px){ 
-    .tournament-header{
+    .tournament-date{
         justify-content: flex-start;
     }
 }
