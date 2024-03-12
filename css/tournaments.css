@@ -24,11 +24,14 @@
     font-size: var(--small-fontSize);
     font-weight: 700;
     color: var(--white);
+}
+
+.tournament-header-date-surface span:first-child{
     background-color: var(--black);
 }
 
-.tournament-header-date-surface span:nth-child(2) img {
-    filter: saturate(100%);
+.tournament-header-date-surface span:last-child {
+    background-color: var(--hard-surface-blue);
 }
 
 @media screen and (min-width:650px){ 
