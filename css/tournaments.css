@@ -1,3 +1,8 @@
+/* .tournaments-flex-container{
+    display:flex;
+    flex-direction:column;
+} */
+
 .tournament-wrapper{
     padding: 0.5em;
     margin-top: 1rem;
@@ -20,18 +25,37 @@
     border-radius: 10px;
 }
 
+
+
+/* Date, court type ontop of the surface image */
+
 .tournament-header-date-surface{
-    font-size: var(--small-fontSize);
+    font-size: calc(var(--small-fontSize)*0.75);
     font-weight: 700;
     color: var(--white);
+
+    display:flex;
+}
+
+.tournament-header-date-surface span img {
+    border-radius: 10px;
+}
+
+.tournament-header-date-surface span {
+    display: flex;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    gap: 0.5rem;
 }
 
 .tournament-header-date-surface span:first-child{
     background-color: var(--black);
+    
 }
 
 .tournament-header-date-surface span:last-child {
     background-color: var(--hard-surface-blue);
+    text-transform: uppercase;
 }
 
 @media screen and (min-width:650px){ 
