@@ -20,6 +20,17 @@
     border-radius: 10px;
 }
 
+.tournament-header-date-surface{
+    font-size: var(--small-fontSize);
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.tournament-header-date-surface span:nth-child(2) img {
+    filter: saturate(100%);
+}
+
 @media screen and (min-width:650px){ 
     .tournament-date{
         justify-content: flex-start;
