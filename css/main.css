@@ -37,7 +37,7 @@
     --small-fontSize: 0.75rem;
     --ranking-fontSize: 3rem;
 
-    /* scaled font based on vw*/
+    --flex-gap-space: 0.25rem;
 }
 
 * {
@@ -51,7 +51,7 @@ img, a{
 }
 
 html {
-    font-size: 1.4rem;
+    font-size: var(--med-fontSize);
     /* font-family: 'Lato', sans-serif; */
     font-family: CreatoDisplay;
 }
@@ -125,8 +125,8 @@ footer{
 
 .footer-social-container{
     display:flex;
-    flex-flow: column nowrap;
-    gap: 0.25rem;
+    flex-direction: column;
+    gap: var(--flex-gap-space);
 }
 
 .footer-social-item a{
@@ -137,10 +137,7 @@ footer{
     align-items:center;
     justify-content:center;
     padding: 0.5em;
-}
-
-.footer-social-item a img{
-    margin-right: 0.5em;
+    gap: calc(var(--flex-gap-space)*2);
 }
 
 .facebook{
@@ -326,7 +323,8 @@ footer{
     }
 
     .footer-social-item{
-        flex: 1 1 150px;
+        /* Always maintain 3 columns of equal footer flex items, subtract out the gap space in between the columns */
+        flex-basis: calc(33.3% - calc(var(--flex-gap-space)*2));
     }
 
     .footer-header{
