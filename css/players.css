@@ -9,15 +9,9 @@
 .players-container{
     padding: 0.5em;
     display:flex;
-    gap: 0.5em;
-    flex-flow: row wrap;
+    gap: var(--flex-gap-space);
+    flex-direction: column;
     justify-content:center;
-}
-
-.player-card{
-    margin-top: 1em;
-    flex: 0 1 400px;
-    text-decoration: none;
 }
 
 .player-card:visited .player-spec-container .player-name .player-last-name{
@@ -114,4 +108,17 @@
 
 @media screen and (min-width:650px){ 
 
+    .players-container {
+        flex-flow: row wrap;
+    }
+
+    .player-card{
+        flex-basis: calc(50% - var(--flex-gap-space));
+    }
+}
+
+@media screen and (min-width:1025px){
+    .player-card{
+        flex-basis: calc(33.3% - var(--flex-gap-space));
+    }
 }
