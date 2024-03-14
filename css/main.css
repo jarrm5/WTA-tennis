@@ -230,8 +230,21 @@ footer{
         height: 100%;
     }
 
+    .list-item-main a:focus-visible {
+        /* :focus-visible class has to target anchor to work */
+        outline: 2px dashed var(--wta-purple);
+    }
+
+    .list-item-main-dropdown a:focus-visible{
+        outline: 2px dashed var(--white);
+    }
+
     .list-item-main:hover, .list-item-main:focus, .list-item-main:visited {
         border-bottom: 3px solid var(--wta-purple);
+    }
+
+    .list-item-main:active{
+        transform: scale(0.97);
     }
 
     .list-item-main-dropdown::after {
@@ -310,10 +323,6 @@ footer{
         font-size: var(--small-fontSize);
         border-bottom: 2px solid transparent;
         width: fit-content;
-    }
-
-    .list-item-dropdown:hover a, .list-item-dropdown:focus a {
-        border-bottom: 2px solid var(--white);
     }
 
     /* FOOTER */
