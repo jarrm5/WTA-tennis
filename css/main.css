@@ -57,7 +57,6 @@ img, a{
 
 html {
     font-size: var(--med-fontSize);
-    /* font-family: 'Lato', sans-serif; */
     font-family: CreatoDisplay;
 }
 
@@ -80,12 +79,10 @@ body{
     justify-content:center;
 }
 
-.logo a{
-    width: 50%;
-}
-
 .logo a img{
-    width: 100%;
+    /* .logo a is a flex item whose width is max-content, expand img to fit this width */
+    width:15rem;
+    height:7rem;
 }
 
 .dropdown-list{
@@ -188,9 +185,6 @@ footer{
 
 @media screen and (min-width:650px){
 
-    /* We need the logo on top, nav beneath it
-    Between 650 and 750px, the last nav link is cut off*/ 
-
     /* MAIN NAV */
 
     header{
@@ -200,11 +194,12 @@ footer{
         position:sticky;
         top:0;
         z-index:1;
-        padding: calc(var(--padding)*2);
+        padding: var(--padding);
     }
 
-    .logo a {
-        width: fit-content;
+    .logo a img{
+        width: 100%;
+        height:100%;
     }
 
     .main-nav > ul{
