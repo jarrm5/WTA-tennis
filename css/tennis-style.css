@@ -1,5 +1,5 @@
 .player-wrapper{
-    padding: 0.5em;
+    padding: var(--padding);
     color: var(--white);
     font-size: calc(var(--med-fontSize) * 0.75);
 }
@@ -7,11 +7,11 @@
 .player-wrapper, .player-header-wrapper{
     display:flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: calc(var(--flex-gap-space)*2);
 }
 
 .player-ranking, .player-body-wrapper{
-    padding: 0.5em;
+    padding: var(--padding);
     background: var(--wta-purple);
 }
 
@@ -42,7 +42,7 @@
 .player-body-wrapper{
     display:flex;
     flex-direction:column;
-    gap: 1rem;
+    gap: calc(var(--flex-gap-space)*4);
 }
 
 .player-name{
@@ -55,7 +55,7 @@
 
 .player-origin-country{
     display:flex;
-    gap: 0.5rem;
+    gap: calc(var(--flex-gap-space)*2);
 }
 
 .player-origin-country p{
@@ -68,7 +68,7 @@
     display:grid;
     grid-template-columns: repeat(2,max-content);
     grid-template-rows: repeat(2,auto);
-    gap:1rem;
+    gap:calc(var(--flex-gap-space)*4);
     grid-auto-flow: column;
 }
 

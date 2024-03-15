@@ -11,6 +11,7 @@
 
 
 :root {
+    /* main colors */
     --black: #000;
     --wta-purple: #7814ff;
     --grey: #818181;
@@ -20,7 +21,7 @@
     --hard-surface-blue: #017bb3;
     --clay-surface-brown: #b15a38;
 
-    /*misc colors*/
+    /* misc colors */
     --checkmark-green: #115503;
     --facebook-blue: #117df2;
     --twitter-blue: #55acee;
@@ -31,13 +32,15 @@
     --weibo-red: #e0152c;
     --snapchat-yellow: #fbff0a;
 
-    /* --profile-value-small: 0.75rem; */
+    /* fonts,padding sizes */
     --large-fontSize: 2rem;
     --med-fontSize: 1.5rem;
     --small-fontSize: 0.75rem;
     --ranking-fontSize: 3rem;
 
     --flex-gap-space: 0.25rem;
+
+    --padding: 0.5rem
 }
 
 * {
@@ -112,14 +115,14 @@ body{
 
 /* FOOTER */
 footer{
-    padding:0.5em;
+    padding: var(--padding);
 }
 
 .footer-header{
     font-size: calc(var(--med-fontSize) * 0.5);
     border-bottom: 3px solid var(--wta-purple);
     text-align:center;
-    padding: 0.5em;
+    padding: var(--padding);
     margin-bottom: 0.25em;
 }
 
@@ -136,7 +139,7 @@ footer{
     display:flex;
     align-items:center;
     justify-content:center;
-    padding: 0.5em;
+    padding: var(--padding);
     gap: calc(var(--flex-gap-space)*2);
 }
 
@@ -195,7 +198,7 @@ footer{
         position:sticky;
         top:0;
         z-index:1;
-        padding: 1em;
+        padding: calc(var(--padding)*2);
     }
 
     .logo a {
@@ -211,7 +214,6 @@ footer{
     }
 
     .list-item-main, .list-item-main-dropdown, .list-item-dropdown{
-        /* padding: 1em 0.65em; */
         flex-flow: column nowrap;
         border-bottom: 3px solid transparent;
         cursor:pointer;
@@ -311,7 +313,7 @@ footer{
     }
 
     .list-item-dropdown{
-        padding: 0.6em;
+        padding: var(--padding);
         display:flex;
         justify-content:center;
         align-items:center
@@ -323,6 +325,10 @@ footer{
         font-size: var(--small-fontSize);
         border-bottom: 2px solid transparent;
         width: fit-content;
+    }
+
+    .list-item-dropdown a:hover, .list-item-dropdown a:focus, .list-item-dropdown a:visited{
+        border-bottom: 2px solid var(--white);
     }
 
     /* FOOTER */
@@ -345,7 +351,7 @@ footer{
     /* Add the logo, nav style of what we were used to */
     header{
         flex-direction: row;
-        gap: 1rem;
+        gap: calc(var(--flex-gap-space) * 4);
     }
 }
 

@@ -4,13 +4,13 @@
 } */
 
 .tournament-wrapper{
-    padding: 0.5em;
+    padding: var(--padding);
     margin-top: 1rem;
 }
 
 .tournament-date{
     display:flex;
-    gap: 0.5rem;
+    gap: calc(var(--flex-gap-space)*2);
     justify-content: center;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .tournament-date-img{
-    padding:0.5em 1em;
+    padding:var(--padding) calc(var(--padding)*2);
     background-color: var(--lightest-grey);
     border-radius: 10px;
 }
@@ -44,8 +44,8 @@
 .tournament-header-date-surface span {
     display: flex;
     align-items: center;
-    padding: 0.25em 0.5em;
-    gap: 0.5rem;
+    padding: calc(var(--padding)*2) var(--padding);
+    gap: calc(var(--flex-gap-space)*2);
 }
 
 .tournament-header-date-surface span:first-child{

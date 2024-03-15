@@ -1,13 +1,13 @@
 .banner{
     background-color: var(--wta-purple);
     color: var(--white);
-    padding: 0.5em;
+    padding: var(--padding);
     margin: 0.5em 0 1.5em 0;
     text-align:center;
 }
 
 .players-container{
-    padding: 0.5em;
+    padding: var(--padding);
     display:flex;
     gap: var(--flex-gap-space);
     flex-direction: column;
@@ -53,13 +53,12 @@
 
 .player-spec-container{
     background-color: var(--light-grey);
-    padding: 0.5em;
+    padding: var(--padding);
     margin-top: 0.5em;
     position:relative;
 }
 
 .player-name {
-	/* padding: 0.5em 0; */
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: flex-start;
@@ -92,9 +91,8 @@
 }
 
 .player-country {
-	/* padding: 0.5em 0; */
 	display: flex;
-	gap: 0.5em;
+	gap: calc(var(--flex-gap-space)*4);
 	margin-top: 0.5em;
 }
 
