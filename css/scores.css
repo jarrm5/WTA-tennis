@@ -3,7 +3,7 @@
     background-color: var(--wta-purple);
     color: var(--white);
     padding: var(--padding);
-    margin: 0.5em 0 1.5em 0;
+    margin: var(--margin) 0 calc(var(--margin)*3) 0;
     text-align:center;
 }
 
@@ -61,7 +61,7 @@
 	background-color: var(--black);
 	padding: calc(var(--padding) / 2);
 	gap:var(--flex-gap-space);
-	margin-top: 0.32em;
+	margin-top: calc(var(--margin)/2);
 	font-size: var(--small-fontSize);
 	flex-direction: column;
     align-items: center;
@@ -79,7 +79,7 @@
 }
 
 .tournament-wrapper {
-    margin-top:0.32em;
+    margin-top:calc(var(--margin)/2);
 }
 
 .match-container{
@@ -89,7 +89,7 @@
 }
 
 .match-wrapper-title{
-    margin: 0.5em 0;
+    margin: var(--margin) 0;
 }
 
 .match-heading{
@@ -106,13 +106,13 @@
 }
 
 .match-status{
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .match-time{
     font-size: calc(var(--small-fontSize) * 0.75);
-    font-weight:bolder;
+    font-weight:bold;
     color: var(--grey);
     display:flex;
     align-items:center;
@@ -152,11 +152,15 @@
     color: var(--grey);
 }
 
+.match-player-last-name{
+    font-weight: var(--fw-small);
+}
+
 .ranking{
     height:100%;
     font-size: calc(var(--small-fontSize) * .60);
     color: var(--wta-purple);
-    font-weight:300;
+    font-weight:var(--fw-small);
 }
 
 .checkmark{
@@ -177,7 +181,7 @@
 }
 
 .score{
-    font-weight:bolder;
+    font-weight:bold;
     display:flex;
     align-items: center;
     justify-content: center;

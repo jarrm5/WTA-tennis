@@ -2,7 +2,7 @@
     background-color: var(--wta-purple);
     color: var(--white);
     padding: var(--padding);
-    margin: 0.5em 0 1.5em 0;
+    margin: var(--margin) 0 calc(var(--margin)*3) 0;
     text-align:center;
 }
 
@@ -54,7 +54,7 @@
 .player-spec-container{
     background-color: var(--light-grey);
     padding: var(--padding);
-    margin-top: 0.5em;
+    margin-top: var(--margin);
     position:relative;
 }
 
@@ -80,7 +80,7 @@
 
 .player-first-name{
     font-weight:bold;
-    font-size: 0.6rem;
+    font-size: var(--small-fontSize);
     color: var(--grey);
     border-bottom: 2px solid transparent;
 }
@@ -93,14 +93,14 @@
 .player-country {
 	display: flex;
 	gap: calc(var(--flex-gap-space)*4);
-	margin-top: 0.5em;
+	margin-top: var(--margin);
 }
 
 .player-country-abbr{
     display:flex;
     align-items:center;
     color: var(--grey);
-    font-size: .6rem;
+    font-size: var(--small-fontSize);
 }
 
 @media screen and (min-width:650px){ 

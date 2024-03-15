@@ -32,15 +32,17 @@
     --weibo-red: #e0152c;
     --snapchat-yellow: #fbff0a;
 
-    /* fonts,padding sizes */
+    /* font,padding sizes */
     --large-fontSize: 2rem;
     --med-fontSize: 1.5rem;
     --small-fontSize: 0.75rem;
     --ranking-fontSize: 3rem;
 
-    --flex-gap-space: 0.25rem;
+    --fw-small: 300;
 
-    --padding: 0.5rem
+    --flex-gap-space: 0.25rem;
+    --padding: 0.5rem;
+    --margin:0.5rem;
 }
 
 * {
@@ -123,7 +125,7 @@ footer{
     border-bottom: 3px solid var(--wta-purple);
     text-align:center;
     padding: var(--padding);
-    margin-bottom: 0.25em;
+    margin-bottom: calc(var(--margin) / 2);
 }
 
 .footer-social-container{
