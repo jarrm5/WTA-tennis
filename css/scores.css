@@ -3,7 +3,7 @@
     background-color: var(--wta-purple);
     color: var(--white);
     padding: var(--padding);
-    margin: var(--margin) 0 calc(var(--margin)*3) 0;
+    margin: calc(var(--margin)*3) 0;
     text-align:center;
 }
 
