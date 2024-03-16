@@ -97,7 +97,25 @@
         justify-content: center;
     }
 
+    .tournaments-flex-container{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
     .tournament-box{
         flex-basis: calc(50% - calc(var(--flex-gap-space)*2));
+    }
+
+    .tournament-body{
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        /* justify-content: center; */
+    }
+}
+
+@media screen and (min-width:1025px){
+    .tournament-box{
+        flex-basis: calc(33.33% - calc(var(--flex-gap-space)*2));   
     }
 }
