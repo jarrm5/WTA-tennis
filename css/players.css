@@ -115,6 +115,7 @@
 }
 
 @media screen and (min-width:1025px){
+
     .player-card{
         flex-basis: calc(33.3% - var(--flex-gap-space));
     }

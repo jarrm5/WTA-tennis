@@ -349,7 +349,11 @@ footer{
 }
 
 @media screen and (min-width:1025px){
-    /* Add the logo, nav style of what we were used to */
+    
+    /* html{
+        font-size: var(--large-fontSize);
+    } */
+
     header{
         flex-direction: row;
         gap: calc(var(--flex-gap-space) * 4);
