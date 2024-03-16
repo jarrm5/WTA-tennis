@@ -18,8 +18,6 @@
     --light-grey: #e6e6e6;
     --lightest-grey: #f2f2f2;
     --white: #fff;
-    --hard-surface-blue: #017bb3;
-    --clay-surface-brown: #b15a38;
 
     /* misc colors */
     --checkmark-green: #115503;
@@ -31,6 +29,9 @@
     --instagram-gradient-red: #f50403;
     --weibo-red: #e0152c;
     --snapchat-yellow: #fbff0a;
+    --hard-surface-blue: #017bb3;
+    --clay-surface-brown: #b15a38;
+    --grass-surface-green: #016738;
 
     /* font,padding sizes */
     --large-fontSize: 2rem;

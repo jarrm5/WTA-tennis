@@ -76,20 +76,30 @@
     
 }
 
+.tournament-header-date-surface span:last-child:is(.hard-surface,.clay-surface,.grass-surface){
+    text-transform: uppercase;
+}
+
 .tournament-header-date-surface span:last-child.hard-surface {
     background-color: var(--hard-surface-blue);
-    text-transform: uppercase;
 }
 
 .tournament-header-date-surface span:last-child.clay-surface {
     background-color: var(--clay-surface-brown);
-    text-transform: uppercase;
+}
+
+.tournament-header-date-surface span:last-child.grass-surface {
+    background-color: var(--grass-surface-green);
 }
 
 /* Tournament-body */
 .tournament-body{
     background-color: var(--light-grey);
     padding: var(--padding);
+}
+
+.tournament-body p{
+    color: var(--grey);
 }
 
 @media screen and (min-width:650px){ 
@@ -99,7 +109,7 @@
 
     .tournaments-flex-container{
         flex-flow: row wrap;
-        justify-content: center;
+        /* justify-content: space-between; */
     }
 
     .tournament-box{
