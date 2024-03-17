@@ -105,12 +105,12 @@ header{
     justify-content: center;
 }
 
-.list-item-main > a, .list-item-main-dropdown > a{
+:is(.list-item-main, .list-item-main-dropdown) > a{
     font-size: var(--small-fontSize);
     font-weight: bold;
     color: var(--black);
     text-align:center;
-    padding: 0.75em 0.25em;
+    padding: calc(var(--padding) * 1.5) calc(var(--padding) / 2);
 }
 
 .list-item-main:nth-child(n+2), .list-item-main-dropdown:nth-child(n+2){
@@ -264,7 +264,7 @@ footer{
         transition: transform 0.5s;
     }
 
-    .list-item-main > a,  .list-item-main-dropdown > a{
+    :is(.list-item-main, .list-item-main-dropdown) > a{
         color: var(--black);
         font-size: var(--small-fontSize);
     }
