@@ -35,8 +35,8 @@
 
     /* font,padding sizes */
     --large-fontSize: 2rem;
-    --med-fontSize: 1.5rem;
-    --small-fontSize: 0.75rem;
+    --med-fontSize: clamp(1.5rem,3vh, 2.5rem);
+    --small-fontSize: clamp(0.75rem, 2vh, 2rem);
     --ranking-fontSize: 3rem;
 
     --fw-small: 300;
@@ -260,7 +260,7 @@ footer{
         position: absolute;
         top: 47.5%;
         /* use rem here is arrows are spaced the same; percents would cause them to be spaced dependent on size of the parent */
-        right: -0.5rem;
+        right: -0.25rem;
         transition: transform 0.5s;
     }
 
