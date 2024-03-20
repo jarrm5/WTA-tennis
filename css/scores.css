@@ -95,7 +95,7 @@
 .match-heading{
     background-color: var(--light-grey);
     padding:calc(var(--padding) / 2);
-    font-size: var(--small-fontSize);
+    font-size: calc(var(--small-fontSize) * 0.75);
     display:flex;
     justify-content: space-between;
 }
@@ -197,6 +197,11 @@
 
 @media screen and (min-width:650px){ 
 
+    
+
+}
+
+@media screen and (min-width:1025px){ 
     .scores-wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -227,8 +232,8 @@
     .match-box {
         /* subtract out the gap so match boxes can stack horizontally */
         flex-basis: calc(45% - calc(var(--flex-gap-space)*2));
-        /* prevents some match boxes from shrinking more than other match boxes with longer names */
-        min-width: 325px;
-    }
+                /* prevents some match boxes from shrinking more than other match boxes with longer names */
 
+        min-width: 420px;
+    }
 }
