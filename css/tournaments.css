@@ -45,7 +45,7 @@
 
 .tournament-header-date-surface{
     font-weight: bold;
-    font-size: var(--small-fontSize);
+    font-size: calc(var(--small-fontSize)*0.75);
     color: var(--white);
     padding: var(--padding);
     width:100%;
@@ -96,6 +96,7 @@
 
 .tournament-body p{
     color: var(--grey);
+    font-size: var(--small-fontSize);
 }
 
 @media screen and (min-width:650px){ 

@@ -9,6 +9,7 @@
 
 .scores-wrapper{
     padding:var(--padding);
+    display: grid;
 }
 
 .surface-container img{
@@ -206,10 +207,8 @@
 
 @media screen and (min-width:1025px){ 
     .scores-wrapper{
-        display: grid;
         grid-template-columns: 1fr 2fr;
         gap: calc(var(--flex-gap-space)*2);
-        max-height:min-content;
     }
     
     /** Tournament Aside CSS **/
