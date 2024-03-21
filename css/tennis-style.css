@@ -19,7 +19,7 @@
 }
 
 .singles-doubles-toggle .btn{
-    font-size: inherit;
+    font-size: calc(var(--small-fontSize) * 0.75);
     display:block;
     background-color: var(--wta-purple);
     color: var(--white);
@@ -41,7 +41,7 @@
 }
 
 .player-ranking p:nth-child(2){
-    font-size: calc(var(--large-fontSize) * 1.5);
+    font-size: calc(var(--large-fontSize)*3);
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .player-name p:nth-child(2){
-    /* font-size: var(--large-fontSize); */
+    font-size: var(--large-fontSize);
 }
 
 .player-origin-country{
@@ -97,16 +97,16 @@
 }
 
 .player-attr-name{
-    /* font-size: var(--med-fontSize); */
+    font-size: var(--med-fontSize);
 }
 
 .player-attr-value-lg{
-    /* font-size: calc(var(--med-fontSize) * 1.25); */
+    font-size: calc(var(--large-fontSize) * 1.25);
     font-weight: bold;
 }
 
 .player-attr-value-sm{
-    /* font-size: var(--small-fontSize); */
+    font-size: calc(var(--small-fontSize) * 0.85);
     opacity: 0.5;
 }
 

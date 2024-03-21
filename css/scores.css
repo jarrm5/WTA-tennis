@@ -27,6 +27,7 @@
     padding: var(--padding);
     position: absolute;
     bottom: 0.5rem;
+    font-size: var(--small-fontSize);
 }
 
 .surface-date{
@@ -190,7 +191,16 @@
 
 @media screen and (min-width:650px){ 
 
-    
+    .match-container{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .match-box {
+        /* subtract out the gap so match boxes can stack horizontally */
+        /* 420px prevents some match boxes from shrinking more than other match boxes with longer names */
+        flex-basis: max(420px,calc(45% - calc(var(--flex-gap-space)*2)));
+    }
 
 }
 
@@ -216,17 +226,10 @@
         /* z-index:0; */
         top:0;
     }
+
+    .match-box{
+        font-size: var(--small-fontSize);
+    }
     
-    .match-container{
-        flex-direction:row;
-        flex-wrap:wrap;
-    }
-
-    .match-box {
-        /* subtract out the gap so match boxes can stack horizontally */
-        flex-basis: calc(45% - calc(var(--flex-gap-space)*2));
-                /* prevents some match boxes from shrinking more than other match boxes with longer names */
-
-        min-width: 420px;
-    }
+    
 }

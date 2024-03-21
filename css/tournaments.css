@@ -45,6 +45,7 @@
 
 .tournament-header-date-surface{
     font-weight: bold;
+    font-size: var(--small-fontSize);
     color: var(--white);
     padding: var(--padding);
     width:100%;
