@@ -80,7 +80,7 @@
 
 .player-first-name{
     font-weight:bold;
-    font-size: var(--small-fontSize);
+    /* font-size: var(--small-fontSize); */
     color: var(--grey);
     border-bottom: 2px solid transparent;
 }
@@ -100,7 +100,7 @@
     display:flex;
     align-items:center;
     color: var(--grey);
-    font-size: var(--small-fontSize);
+    /* font-size: var(--small-fontSize); */
 }
 
 @media screen and (min-width:650px){ 

@@ -1,7 +1,6 @@
 .player-wrapper{
     padding: var(--padding);
     color: var(--white);
-    font-size: calc(var(--med-fontSize) * 0.75);
 }
 
 .player-wrapper, .player-header-wrapper{
@@ -25,7 +24,6 @@
     background-color: var(--wta-purple);
     color: var(--white);
     padding: calc(var(--padding) / 2);
-    font-size: calc(var(--small-fontSize) / 2);
     font-weight: bold;
     flex-basis: 15%;
     border: 3px solid var(--white);
@@ -76,7 +74,7 @@
 }
 
 .player-name p:nth-child(2){
-    font-size: var(--large-fontSize);
+    /* font-size: var(--large-fontSize); */
 }
 
 .player-origin-country{
@@ -99,16 +97,16 @@
 }
 
 .player-attr-name{
-    font-size: var(--med-fontSize);
+    /* font-size: var(--med-fontSize); */
 }
 
 .player-attr-value-lg{
-    font-size: calc(var(--med-fontSize) * 1.25);
+    /* font-size: calc(var(--med-fontSize) * 1.25); */
     font-weight: bold;
 }
 
 .player-attr-value-sm{
-    font-size: var(--small-fontSize);
+    /* font-size: var(--small-fontSize); */
     opacity: 0.5;
 }
 

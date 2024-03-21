@@ -34,9 +34,9 @@
     --grass-surface-green: #016738;
 
     /* font,padding sizes */
+    --small-fontSize: clamp(0.75rem,1.5vh,2rem);
+    --med-fontSize: clamp(1rem,2vh,2.25rem);
     --large-fontSize: 2rem;
-    --med-fontSize: clamp(1.5rem,3vh, 2.5rem);
-    --small-fontSize: clamp(0.75rem, 2vh, 2rem);
     --ranking-fontSize: 3rem;
 
     --fw-small: 300;
@@ -79,9 +79,11 @@ header{
     box-shadow: 0 6px 5px -5px;
 }
 
-.logo{
-    display:flex;
-    justify-content:center;
+.logo {
+	display: flex;
+	justify-content: center;
+	/* flex-basis: 25%; */
+	/* min-width: 250px; */
 }
 
 .logo a img{
@@ -106,7 +108,6 @@ header{
 }
 
 :is(.list-item-main, .list-item-main-dropdown) > a{
-    font-size: var(--small-fontSize);
     font-weight: bold;
     color: var(--black);
     text-align:center;
@@ -123,7 +124,6 @@ footer{
 }
 
 .footer-header{
-    font-size: calc(var(--med-fontSize) * 0.5);
     border-bottom: 3px solid var(--wta-purple);
     text-align:center;
     padding: var(--padding);
@@ -139,7 +139,6 @@ footer{
 .footer-social-item a{
     color: var(--white);
     font-weight: bold;
-    font-size: var(--small-fontSize);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -266,7 +265,6 @@ footer{
 
     :is(.list-item-main, .list-item-main-dropdown) > a{
         color: var(--black);
-        font-size: var(--small-fontSize);
     }
 
     .list-item-main-dropdown:hover .dropdown-list, .list-item-main-dropdown:focus .dropdown-list {
@@ -324,7 +322,6 @@ footer{
     .list-item-dropdown > a{
         text-decoration: none;
         color: var(--white);
-        font-size: var(--small-fontSize);
         border-bottom: 2px solid transparent;
         width: fit-content;
     }
@@ -344,16 +341,9 @@ footer{
         flex-basis: calc(33.3% - calc(var(--flex-gap-space)*2));
     }
 
-    .footer-header{
-        font-size: calc(var(--med-fontSize) * 0.75);
-    } 
 }
 
 @media screen and (min-width:1025px){
-    
-    /* html{
-        font-size: var(--large-fontSize);
-    } */
 
     header{
         flex-direction: row;
@@ -361,20 +351,6 @@ footer{
     }
 }
 
-/* @media screen and (min-width:1025px){
-    .list-item-main > a,  .list-item-main-dropdown > a{
-        font-size: calc(var(--med-fontSize) * 0.70);
-    }
-
-    .list-item-main-dropdown::after {
-        right: -5%;
-    }
-
-    .player-first-name{   
-        font-size: calc(var(--med-fontSize) * 0.70);
-    }
-
-    .player-last-name{
-        font-size: calc(var(--med-fontSize) * 0.90);
-    }
-} */
+@media screen and (min-width:1025px){
+    
+}

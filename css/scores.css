@@ -22,7 +22,6 @@
 
 .surface-label{
     width: 100%;
-    font-size: var(--small-fontSize);
     display:flex;
     justify-content:space-between;
     padding: var(--padding);
@@ -62,7 +61,6 @@
 	padding: calc(var(--padding) / 2);
 	gap:var(--flex-gap-space);
 	margin-top: calc(var(--margin)/2);
-	font-size: var(--small-fontSize);
 	flex-direction: column;
     align-items: center;
 }
@@ -95,7 +93,6 @@
 .match-heading{
     background-color: var(--light-grey);
     padding:calc(var(--padding) / 2);
-    font-size: calc(var(--small-fontSize) * 0.75);
     display:flex;
     justify-content: space-between;
 }
@@ -111,7 +108,6 @@
 }
 
 .match-time{
-    font-size: calc(var(--small-fontSize) * 0.75);
     font-weight:bold;
     color: var(--grey);
     display:flex;
@@ -125,7 +121,6 @@
 .match-scores-grid-container{
     display: grid;
     grid-template-columns: 10fr repeat(3,1fr);
-    /* grid-template-rows: repeat(2,auto); */
 }
 
 .match-player-container{
@@ -143,7 +138,6 @@
 .match-player-name{
     display:flex;
     align-items:center;
-    font-size: calc(var(--small-fontSize) * 0.75);
     font-weight:bold;
     gap:var(--flex-gap-space);
     width:100%;
@@ -159,7 +153,6 @@
 
 .ranking{
     height:100%;
-    font-size: calc(var(--small-fontSize) * .60);
     color: var(--wta-purple);
     font-weight:var(--fw-small);
 }
