@@ -49,6 +49,7 @@
     color: var(--white);
     padding: var(--padding);
     width:100%;
+    white-space: nowrap;
     display:flex;
     justify-content: space-between;
     position:absolute;
