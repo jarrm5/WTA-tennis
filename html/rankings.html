@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/tennis-style.css" />
+    <link rel="stylesheet" href="../css/rankings.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Flex n Tennis!</title>
   </head>
@@ -43,46 +43,78 @@
       </nav>
     </header>
     <main>
-      <div class="player-wrapper">
-        <div class="player-header-wrapper">
-          <div class="player-ranking">
-            <p>Ranking</p>
-            <p>1</p>
-            <div class="singles-doubles-toggle">
-              <input type="button" value="Singles" class="btn btn-selected"></input>
-              <input type="button" value="Doubles" class="btn"></input>
+      <div class="banner"><h1>WTA Players</h1></div>
+      <div class="players-container">
+        <a href="../html/player.html" class="player-card">
+          <!-- <div class="player-card"> -->
+          <!-- <div class="player-img-outer-container"> -->
+          <div class="player-img-container">
+            <img src="../img/Swiatek-Torso-600px.webp" alt="Iga Bae" />
+          </div>
+          <!-- </div> -->
+          <div class="player-spec-container">
+            <div class="player-name">
+              <p class="player-first-name">Iga</p>
+              <p class="player-last-name">Swiatek</p>
+            </div>
+            <div class="player-country">
+              <img src="../img/Flag_of_Poland_53x33.png" width="40" height="20" alt="Poland Flag" />
+              <p class="player-country-abbr">POL</p>
             </div>
           </div>
-          <img src="../img/Swiatek-Torso-600px.webp" alt="Iga Swiatek" />
-          <!-- player-header-wrapper::after is a child of .player-header-wrapper! -->
+          <!-- </div> -->
+        </a>
+        <div class="player-card">
+          <div class="player-img-container">
+            <img src="../img/Pegula-Torso_316956.webp" alt="Jess Bae" />
+          </div>
+          <div class="player-spec-container">
+            <div class="player-name">
+              <p class="player-first-name">Jessica</p>
+              <p class="player-last-name">Pegula</p>
+            </div>
+            <div class="player-country">
+              <img src="../img/Flag_of_USA_53x28.jpg" width="40" height="20" alt="USA Flag" />
+              <p class="player-country-abbr">USA</p>
+            </div>
+          </div>
         </div>
-        <div class="player-body-wrapper">
-          <div class="player-name">
-            <p>Iga</p>
-            <p>Swiatek</p>
+        <div class="player-card">
+          <div class="player-img-container"><img src="../img/Sakkari_Torse.webp" alt="Maria Bae" /></div>
+          <div class="player-spec-container">
+            <div class="player-name">
+              <p class="player-first-name">Maria</p>
+              <p class="player-last-name">Sakkari</p>
+            </div>
+            <div class="player-country">
+              <img src="../img/Flaf_of_Greece_53x35.png" width="40" height="20" alt="Greece Flag" />
+              <p class="player-country-abbr">GRE</p>
+            </div>
           </div>
-          <div class="player-origin-country">
-            <img src="../img/Flag_of_Poland_53x33.png" alt="Poland Flag" />
-            <p class="player-attr-value-sm">Poland</p>
+        </div>
+        <div class="player-card">
+          <div class="player-img-container"><img class="player-headshot-img" src="../img/Giorgi.webp" alt="Camila bae" /></div>
+          <div class="player-spec-container">
+            <div class="player-name">
+              <p class="player-first-name">Camila</p>
+              <p class="player-last-name">Giorgi</p>
+            </div>
+            <div class="player-country">
+              <img src="../img/Flaf_of_Italy_53x35.png" width="40" height="20" alt="Poland Flag" />
+              <p class="player-country-abbr">ITA</p>
+            </div>
           </div>
-          <div class="player-attr-grid">
-            <div>
-              <p class="player-attr-name">Height</p>
-              <p class="player-attr-value-lg">5'9"</p>
-              <p class="player-attr-value-sm">176cm</p>
+        </div>
+        <div class="player-card">
+          <div class="player-img-container"><img src="../img/Danielle.webp" alt="Danielle Bae" /></div>
+          <div class="player-spec-container">
+            <div class="player-name">
+              <p class="player-first-name">Danielle</p>
+              <p class="player-last-name">Collins</p>
             </div>
-            <div>
-              <p class="player-attr-name">Plays</p>
-              <p class="player-attr-value-sm">Right-Handed</p>
-            </div>
-            <div>
-              <p class="player-attr-name">Age</p>
-              <p class="player-attr-value-lg">22</p>
-              <p class="player-attr-value-sm">May 31 2001</p>
-            </div>
-            <div>
-              <p class="player-attr-name">Birthplace</p>
-              <p class="player-attr-value-sm">Warsaw, Poland</p>
+            <div class="player-country">
+              <img src="../img/Flag_of_USA_53x28.jpg" width="40" height="20" alt="Poland Flag" />
+              <p class="player-country-abbr">USA</p>
             </div>
           </div>
         </div>
