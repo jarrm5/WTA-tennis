@@ -1,9 +1,44 @@
-.banner{
-    background-color: var(--wta-purple);
-    color: var(--white);
+.main-news-container, .news-stories-container{
     padding: var(--padding);
-    margin: calc(var(--margin)*3) 0;
+    display:grid;
+    gap: calc(var(--flex-gap-space)*4);
+}
+
+.main-news-article figure img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.main-news-article figure figcaption a{
+    color: var(--black);
+    font-size: var(--large-fontSize);
+    font-weight: bold;
+}
+
+.latest-news-container h1{
     text-align:center;
+    border-bottom: 3px solid var(--wta-purple);
+}
+
+.latest-news-container ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: var(--padding);
+}
+
+.latest-news-container ul .latest-news-list-item:not(:last-child){
+    border-bottom: 2px solid var(--light-grey);
+}
+
+.latest-news-container ul .latest-news-list-item::marker{
+    color: var(--wta-purple);
+}
+
+.latest-news-container ul .latest-news-list-item a{
+    /* So that the bullets and anchor tag are on the same line, and I can apply padding */
+    display:inline-block;
+    padding: calc(var(--padding)*2) 0 calc(var(--padding)*2) 0;
+    color: var(--black);
 }
 
 @media screen and (min-width:650px){ 
