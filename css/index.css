@@ -1,0 +1,15 @@
+.banner{
+    background-color: var(--wta-purple);
+    color: var(--white);
+    padding: var(--padding);
+    margin: calc(var(--margin)*3) 0;
+    text-align:center;
+}
+
+@media screen and (min-width:650px){ 
+
+}
+
+@media screen and (min-width:1025px){ 
+    
+}
