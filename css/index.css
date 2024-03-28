@@ -4,6 +4,16 @@
     gap: calc(var(--flex-gap-space)*4);
 }
 
+.main-news-article:hover figure figcaption a{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: var(--wta-purple);
+}
+
+.main-news-article:hover figure img{
+    filter:brightness(0.75);
+}
+
 .main-news-article figure img{
     border-radius: 10px;
     width: 100%;
@@ -35,9 +45,13 @@
 }
 
 .latest-news-container ul .latest-news-list-item a{
-    /* So that the bullets and anchor tag are on the same line, and I can apply padding */
-    display:inline-block;
     padding: calc(var(--padding)*2) 0 calc(var(--padding)*2) 0;
+    color: var(--black);
+}
+
+.latest-news-container ul .latest-news-list-item a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     color: var(--black);
 }
 
